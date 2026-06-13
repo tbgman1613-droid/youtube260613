@@ -5,5 +5,4 @@ numpy
 plotly
 wordcloud
 matplotlib
-konlpy
 pillow
