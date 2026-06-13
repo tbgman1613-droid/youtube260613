@@ -260,3 +260,8 @@ if st.button("분석 시작"):
         df.head(100),
         use_container_width=True
     )
+try:
+    response = request.execute()
+except Exception as e:
+    st.error(str(e))
+    st.stop()
