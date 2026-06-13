@@ -1,4 +1,16 @@
-import streamlit as st
+import requests
+import os
+
+FONT_PATH = "NanumGothic.ttf"
+
+if not os.path.exists(FONT_PATH):
+
+    url = "https://github.com/google/fonts/raw/main/ofl/nanumgothic/NanumGothic-Regular.ttf"
+
+    r = requests.get(url)
+
+    with open(FONT_PATH, "wb") as f:
+        f.write(r.content)import streamlit as st
 import pandas as pd
 import numpy as np
 import re
